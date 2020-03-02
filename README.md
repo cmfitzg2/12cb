@@ -28,10 +28,8 @@ Both window types are resizable. This allows the user to more easily fit them in
 
 Lastly, the background color for both windows (most importantly the single-character window) was carefully selected as an easy color to target with a Color Key filter that doesn't have any overlap with the character profiles or icons. Here are some OBS Color Key values that have worked well for me: 
 
--Color RGB: 0, 191, 255 
-
--Similarity: 234
-
--Smoothness: 185
+- Color RGB: 0, 191, 255 
+- Similarity: 234
+- Smoothness: 185
 
 Contact me on facebook (Collin Fitzgerald) / twitter (@narwhal_reborn) / discord (lord narwhal #2879) if you have any issues.
