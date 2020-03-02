@@ -14,25 +14,57 @@ public class Assets {
     public static List<BufferedImage> stockIcons = new ArrayList<>();
     public static List<List<BufferedImage>> totalStocks = new ArrayList<>();
 
-    public static void init() {
+    private static Integer stockIconSize = 8;
+    private static String stockIconFile = "icons.png";
+
+    private static Integer charIconWidth = 125;
+    private static Integer charIconHeight = 125;
+    private static String charFile = "charsheet.png";
+    private static String deadCharFile = "charsheet-dead.png";
+
+    public static void init(String style) {
         try {
-            stockIconSheet = ImageIO.read(Assets.class.getResourceAsStream("icons.png"));
-            charSheet = ImageIO.read(Assets.class.getResourceAsStream("charsheet.png"));
-            deadCharSheet = ImageIO.read(Assets.class.getResourceAsStream("charsheet-dead.png"));
+            switch(style) {
+                case "Sekerei":
+                    stockIconSize = 8;
+                    stockIconFile = "icons.png";
+
+                    charIconWidth = 125;
+                    charIconHeight = 125;
+                    charFile = "charsheet-sekerei.png";
+                    deadCharFile = "charsheet-sekerei-dead.png";
+                    break;
+                case "Original":
+                    stockIconSize = 8;
+                    stockIconFile = "icons.png";
+
+                    charIconWidth = 89;
+                    charIconHeight = 86;
+                    charFile = "charsheet-original.png";
+                    deadCharFile = "charsheet-original-dead.png";
+                    break;
+                default:
+                    // already defined on init
+                    break;
+            }
+
+            stockIconSheet = ImageIO.read(Assets.class.getResourceAsStream(stockIconFile));
+            charSheet = ImageIO.read(Assets.class.getResourceAsStream(charFile));
+            deadCharSheet = ImageIO.read(Assets.class.getResourceAsStream(deadCharFile));
         } catch (IOException | IllegalArgumentException e) {
             e.printStackTrace();
             ConfigWindow.printError("Couldn't find one or more image assets", new Font("Verdana", Font.PLAIN, 12));
         }
 
         for (int i = 0, index2 = 0; i < 12; i++) {
-            stockIcons.add(stockIconSheet.getSubimage(i * 8, 0, 8, 10));
+            stockIcons.add(stockIconSheet.getSubimage(i * stockIconSize, 0, stockIconSize, 10));
             totalStocks.add(new ArrayList<>());
             if (i < 6) {
-                charIcons.add(new ImageIcon(Assets.charSheet.getSubimage(i * 125, 0, 125, 125)));
-                deadIcons.add(new ImageIcon(Assets.deadCharSheet.getSubimage(i * 125, 0, 125, 125)));
+                charIcons.add(new ImageIcon(Assets.charSheet.getSubimage(i * charIconWidth, 0, charIconWidth, charIconHeight)));
+                deadIcons.add(new ImageIcon(Assets.deadCharSheet.getSubimage(i * charIconWidth, 0, charIconWidth, charIconHeight)));
             } else {
-                charIcons.add(new ImageIcon(Assets.charSheet.getSubimage(index2 * 125, 125 , 125, 125)));
-                deadIcons.add(new ImageIcon(Assets.deadCharSheet.getSubimage(index2 * 125, 125, 125, 125)));
+                charIcons.add(new ImageIcon(Assets.charSheet.getSubimage(index2 * charIconWidth, charIconHeight , charIconWidth, charIconHeight)));
+                deadIcons.add(new ImageIcon(Assets.deadCharSheet.getSubimage(index2 * charIconWidth, charIconHeight, charIconWidth, charIconHeight)));
                 index2++;
             }
         }

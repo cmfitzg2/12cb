@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 
 public class ConfigWindow implements ActionListener {
     private int stockLimit;
+    private String imageStyle;
     private JFrame configWindow;
     private JButton startButton = new JButton("Start");
     private JPanel configPanelMain = new JPanel();
@@ -13,9 +14,11 @@ public class ConfigWindow implements ActionListener {
     private JLabel stocksLabel = new JLabel("Stock total: ");
     public static JLabel errorLabel = new JLabel();
     private JTextField stocksTextField = new JTextField(2);
+    private JLabel styleLabel = new JLabel("Image Style: ");
+    private String[] styleNames = { "Lord Narwhal", "Sekerei", "Original" };
+    private JComboBox styleList = new JComboBox(styleNames);
 
     public static void main(String[] args) {
-        Assets.init();
         new ConfigWindow();
     }
 
@@ -28,6 +31,8 @@ public class ConfigWindow implements ActionListener {
         startButton.setMnemonic(KeyEvent.VK_ENTER);
         configPanelMain.add(stocksLabel);
         configPanelMain.add(stocksTextField);
+        configPanelMain.add(styleLabel);
+        configPanelMain.add(styleList);
         configPanelMain.add(startButton);
         errorPanel.add(errorLabel);
         configWindow.add(configPanelMain);
@@ -43,6 +48,7 @@ public class ConfigWindow implements ActionListener {
         if (ae.getSource().equals(startButton)) {
             try {
                 stockLimit = Integer.parseInt(stocksTextField.getText());
+                imageStyle = (String) styleList.getSelectedItem().toString();
             } catch (NumberFormatException e) {
                 //if anyone not in smash 64's community reads this please know it's an inside joke
                 //especially like if i'm applying for a job and for some reason submit this as a demo project
@@ -50,8 +56,8 @@ public class ConfigWindow implements ActionListener {
                 printError("idiot", new Font("Comic Sans MS", Font.PLAIN, 64));
                 return;
             }
-            new CharactersWindow(1, stockLimit);
-            new CharactersWindow(2, stockLimit);
+            new CharactersWindow(1, stockLimit, imageStyle);
+            new CharactersWindow(2, stockLimit, imageStyle);
             configWindow.dispose();
         }
     }

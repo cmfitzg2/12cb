@@ -16,7 +16,9 @@ public class CharactersWindow implements ActionListener {
     private JPanel characterPanelMain = new JPanel();
     private ChromaWindow chromaWindow;
 
-    public CharactersWindow(int windowNum, int stockLimit) {
+    public CharactersWindow(int windowNum, int stockLimit, String imageStyle) {
+        Assets.init(imageStyle);
+
         this.stockLimit = stockLimit;
         charactersWindow = new JFrame("P" + windowNum +" Config");
         if (windowNum == 1) {
