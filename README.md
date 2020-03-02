@@ -1,4 +1,4 @@
-# 12cb
+# Overview
 A stream-friendly tool for tracking a twelve character battle in Smash 64
 
 Note: at a minimum, this tool will require the Java Runtime Environment (JRE) to run. To see if you have it, launch a command prompt / terminal window and type `java -version` and see if the command is recognized. If not, follow this guide for installing Java and get out of the stone age.
