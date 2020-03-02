@@ -9,7 +9,7 @@ The JDK includes the JRE, and will also allow you to modify / compile this progr
 # How to operation
 #### Easy to operation, simple: 
 
-After installing the JRE, simply download the executable JAR included in this project, save it anywhere, and run it. 
+After installing the JRE, simply download the executable JAR included in this project, save it anywhere, and run it. If your browser gives you trouble, try downloading the .zip version, which just contains the JAR inside it.
 
 #### Difficult to operation, complex: 
 
