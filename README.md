@@ -27,8 +27,8 @@ The smaller, single-character windows are intended as a more succinct summary of
 Both window types are resizable. This allows the user to more easily fit them into their overlay, or to minimize the size of the config window while still allowing it to be used for control. The single-character windows will wrap the stock icons to fit the window size.
 
 Lastly, the background color for both windows (most importantly the single-character window) was carefully selected as an easy color to target with a Color Key filter that doesn't have any overlap with the character profiles or icons. Here are some OBS Color Key values that have worked well for me: 
-Color RGB: 0, 191, 255 
-Similarity: 234
-Smoothness: 185
+-Color RGB: 0, 191, 255 
+-Similarity: 234
+-Smoothness: 185
 
 Contact me on facebook (Collin Fitzgerald) / twitter (@narwhal_reborn) / discord (lord narwhal #2879) if you have any issues.
