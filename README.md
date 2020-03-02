@@ -7,9 +7,10 @@ https://docs.oracle.com/goldengate/1212/gg-winux/GDRAD/java.htm#BGBFJHAB
 The JDK includes the JRE, and will also allow you to modify / compile this program locally. If that isn't your intent, the JRE by itself is fine.
 
 # How to operation
-=================
-Easy to operation, simple: After installing the JRE, simply download the executable JAR included in this project, save it anywhere, and run it. 
-Difficult to operation, complex: Install the JDK, download the source code, and manually compile it after reading through all the source code to make sure I'm not giving you a keylogger or something.
+###### Easy to operation, simple: 
+After installing the JRE, simply download the executable JAR included in this project, save it anywhere, and run it. 
+###### Difficult to operation, complex: 
+Install the JDK, download the source code, and manually compile it after reading through all the source code to make sure I'm not giving you a keylogger or something.
 
 After running, a small config window will pop-up that will prompt you to enter the number of stocks to use for the 12cb. After inputting and hitting start, 4 windows will launch. The tall windows can be used as either the primary capture windows for the stream for Player 1 / Player 2, or as the config managers for the single-character windows (and thus not captured as stream elements themselves). If you're doing the former, you can safely close / ignore the single-character windows and the program will run normally. If you're doing the latter, the tall windows will be used to switch the active character for each player and as a way to update remaining stocks.
 
