@@ -6,7 +6,7 @@ https://docs.oracle.com/goldengate/1212/gg-winux/GDRAD/java.htm#BGBFJHAB
 
 The JDK includes the JRE, and will also allow you to modify / compile this program locally. If that isn't your intent, the JRE by itself is fine.
 
-HOW TO OPERATION
+# How to operation
 =================
 Easy to operation, simple: After installing the JRE, simply download the executable JAR included in this project, save it anywhere, and run it. 
 Difficult to operation, complex: Install the JDK, download the source code, and manually compile it after reading through all the source code to make sure I'm not giving you a keylogger or something.
