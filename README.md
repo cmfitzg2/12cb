@@ -39,3 +39,9 @@ Lastly, the background color for both windows (most importantly the single-chara
 If you want to change the source images, just use a typical archive tool like 7zip or WinRAR to open the directory. By default, the images in the JAR are just bundled in uncompressed, so you can simply replace the images in the archive with your modified image, and it will work as long as you honor the dimensions in the images. 
 
 Contact me on facebook (Collin Fitzgerald) / twitter (@narwhal_reborn) / discord (lord narwhal #2879) if you have any issues.
+
+# Screenshots
+
+![App screenshot 1](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-0.png?raw=true)
+![App screenshot 2](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-1.png?raw=true)
+![App screenshot 3](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-2.png?raw=true)
