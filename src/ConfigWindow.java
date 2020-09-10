@@ -37,7 +37,7 @@ public class ConfigWindow implements ActionListener {
         errorPanel.add(errorLabel);
         configWindow.add(configPanelMain);
         configWindow.add(errorPanel, BorderLayout.SOUTH);
-        configWindow.setSize(350, 165);
+        configWindow.setSize(350, 195);
         configWindow.setLocationRelativeTo(null);
         configWindow.setResizable(false);
         configWindow.setVisible(true);
@@ -48,7 +48,9 @@ public class ConfigWindow implements ActionListener {
         if (ae.getSource().equals(startButton)) {
             try {
                 stockLimit = Integer.parseInt(stocksTextField.getText());
-                imageStyle = (String) styleList.getSelectedItem().toString();
+                if (null != styleList.getSelectedItem()) {
+                    imageStyle = styleList.getSelectedItem().toString();
+                }
             } catch (NumberFormatException e) {
                 //if anyone not in smash 64's community reads this please know it's an inside joke
                 //especially like if i'm applying for a job and for some reason submit this as a demo project
