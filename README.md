@@ -1,3 +1,6 @@
+# Full tutorial
+https://www.youtube.com/watch?v=f_DaKsksumc
+
 # Overview
 A stream-friendly tool for tracking a twelve character battle in Smash 64
 
