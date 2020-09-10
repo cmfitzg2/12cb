@@ -42,6 +42,6 @@ Contact me on facebook (Collin Fitzgerald) / twitter (@narwhal_reborn) / discord
 
 # Screenshots
 
-![App screenshot 1](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-0.png?raw=true)
-![App screenshot 2](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-1.png?raw=true)
-![App screenshot 3](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-2.png?raw=true)
+![App screenshot 1](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-0.png?raw=true)<br/>
+![App screenshot 2](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-1.png?raw=true)<br/>
+![App screenshot 3](https://github.com/cmfitzg2/12cb/blob/master/res/promo-art/UI-2.png?raw=true)<br/>
